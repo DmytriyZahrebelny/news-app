@@ -2,7 +2,7 @@
   "name": "news-app",
   "version": "0.1.0",
   "private": true,
-  "home": "https://dmytriyzahrebelny.github.io/news-app/",
+  "homepage": "https://dmytriyzahrebelny.github.io/news-app/",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.4",
