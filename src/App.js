@@ -27,7 +27,7 @@ export const App = () => {
       <Header />
       <div className={classes.main}>
         <Switch>
-          <Route path={ROUTS.auth} component={Auth} />
+          <Route exact path={ROUTS.auth} component={Auth} />
           <PrivateRoute
             component={Editor}
             path={`${ROUTS.profile}/:id`}

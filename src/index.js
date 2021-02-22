@@ -10,7 +10,7 @@ import { initStore } from './store/store';
 import { theme } from './theme';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/news-app">
     <Provider store={initStore()}>
       <ThemeProvider theme={theme}>
         <React.StrictMode>
