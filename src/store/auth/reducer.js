@@ -1,7 +1,7 @@
 import { AUTH } from './constants';
 
 const initialState = {
-  isAuth: false,
+  isAuth: localStorage.getItem('auth') || false,
 };
 
 export const authReducer = (state = initialState, action) => {

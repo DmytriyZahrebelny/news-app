@@ -7,7 +7,7 @@ import { useEditorStyles } from './useEditorStyles';
 
 export const Editor = () => {
   const classes = useEditorStyles();
-  const { register, handleSubmit, isLoadding, post, deletePostHandler, isUpdate } = useEditor();
+  const { register, handleSubmit, isLoadding, post, isUpdate, requestState } = useEditor();
 
   return isLoadding ? (
     <Typography className={classes.title} variant="h6">
@@ -18,6 +18,11 @@ export const Editor = () => {
       <Typography className={classes.title} variant="h4">
         Editor
       </Typography>
+      {requestState && (
+        <Typography className={classes.success} variant="h4">
+          Success
+        </Typography>
+      )}
       <form onSubmit={handleSubmit} className={classes.form}>
         <FormField
           name="title"
@@ -35,11 +40,6 @@ export const Editor = () => {
           <Typography variant="button">Update post</Typography>
         </button>
       </form>
-      {isUpdate && (
-        <button className={classes.button} type="submit" onClick={deletePostHandler}>
-          <Typography variant="button">Delete post</Typography>
-        </button>
-      )}
     </div>
   );
 };

@@ -22,4 +22,10 @@ export const useEditorStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     height: 250,
   },
+  success: {
+    width: '100%',
+    padding: '20px 0',
+    textAlign: 'center',
+    color: theme.colors.lightseagreen,
+  },
 }));

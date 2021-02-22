@@ -17,6 +17,30 @@ export const useProfileStyles = makeStyles((theme) => ({
     border: 'none',
     borderRadius: 20,
     cursor: 'pointer',
-    textDecoration: 'none',
+  },
+  editContainer: {
+    borderBottom: `1px solid ${theme.colors.lightsalmon}`,
+
+    '& a': {
+      textDecoration: 'none',
+    },
+  },
+  linkContainer: {
+    display: 'flex',
+    justifyContent: 'space-around',
+    width: 200,
+  },
+  editLink: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: 80,
+    height: 30,
+    margin: '10px 0',
+    backgroundColor: theme.colors.lightsalmon,
+    color: theme.colors.white,
+    borderRadius: 20,
+    cursor: 'pointer',
+    border: 'none',
   },
 }));
